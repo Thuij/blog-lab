@@ -1,0 +1,105 @@
+/* General page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #263849;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  color: #e0e6ed;
+}
+
+/* Section styling */
+section {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #263849;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5e9ef;
+  padding-bottom: 10px;
+}
+
+/* About section */
+section h3 {
+  color: #34495e;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* Article cards */
+article {
+  background-color: #f9fafc;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-left: 5px solid #263849;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+article h2 {
+  color: #263849;
+  font-size: 22px;
+  margin-bottom: 8px;
+  border-bottom: none;
+}
+
+article small {
+  display: block;
+  color: #777;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+article p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  article {
+    padding: 16px;
+  }
+}
