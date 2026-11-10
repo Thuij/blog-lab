@@ -1,10 +1,10 @@
 function Header(props) {
   return (
     <header>
-      <h1>{props.title}</h1>
-      <p>Welcome to my corner of the internet!</p>
+      <h1>{props.name || props.title}</h1>
+      <p>Welcome to my personal blog!</p>
     </header>
   );
 }
 
-export default Header; 
+export default Header;

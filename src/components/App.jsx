@@ -1,21 +1,18 @@
-import React from "react";
-import blog from "./blog";
-
-import Header from "./components/Header";
-import About from "./components/About";
-import ArticleList from "./components/ArticleList";
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
+import blog from "../data/blog";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header title={blog.title} />
-
       <About
         name={blog.name}
         about={blog.about}
+        image={blog.image}
       />
-
-      <ArticleList articles={blog.articles} />
+      <ArticleList posts={blog.posts || blog.articles} />
     </div>
   );
 }

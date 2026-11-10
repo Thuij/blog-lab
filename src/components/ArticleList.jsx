@@ -1,19 +1,19 @@
 import Article from "./Article";
 
 function ArticleList(props) {
-  return (
-    <section>
-      <h2>Latest Articles</h2>
+  const posts = props.posts || [];
 
-      {props.articles.map((article) => (
+  return (
+    <main>
+      {posts.map((post, index) => (
         <Article
-          key={article.id}
-          title={article.title}
-          date={article.date}
-          content={article.content}
+          key={index}
+          title={post.title}
+          date={post.date}
+          preview={post.preview}
         />
       ))}
-    </section>
+    </main>
   );
 }
 

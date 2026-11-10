@@ -1,11 +1,14 @@
 function About(props) {
   return (
-    <section>
-      <h2>About Me</h2>
-      <h3>{props.name}</h3>
+    <aside>
+      <img
+        src={props.image || "https://via.placeholder.com/215"}
+        alt="blog logo"
+      />
+
       <p>{props.about}</p>
-    </section>
+    </aside>
   );
 }
 
-export default About; 
+export default About;
